@@ -53,7 +53,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DLCS.Data.IIIF\Digirati.IIIF.csproj">
+    <ProjectReference Include="..\Digirati.IIIF\Digirati.IIIF.csproj">
       <Project>{c91ea796-906e-4659-96ae-6f0ac286cb40}</Project>
       <Name>Digirati.IIIF</Name>
     </ProjectReference>

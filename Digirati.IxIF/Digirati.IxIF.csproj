@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DLCS.Data.IIIF\Digirati.IIIF.csproj">
+    <ProjectReference Include="..\Digirati.IIIF\Digirati.IIIF.csproj">
       <Project>{C91EA796-906E-4659-96AE-6F0AC286CB40}</Project>
       <Name>Digirati.IIIF</Name>
     </ProjectReference>

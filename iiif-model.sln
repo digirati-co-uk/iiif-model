@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digirati.IIIF", "DLCS.Data.IIIF\Digirati.IIIF.csproj", "{C91EA796-906E-4659-96AE-6F0AC286CB40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digirati.IIIF", "Digirati.IIIF\Digirati.IIIF.csproj", "{C91EA796-906E-4659-96AE-6F0AC286CB40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harness.Test", "Harness.Test\Harness.Test.csproj", "{49E0A588-FCEC-4FFA-9185-E8D5DD000E0B}"
 EndProject
