@@ -2,6 +2,9 @@
 
 namespace Digirati.IIIF.Model.Types
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Manifest : IIIFPresentationBase
     {
         [JsonProperty(Order = 31, PropertyName = "viewingDirection")]
