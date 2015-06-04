@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C91EA796-906E-4659-96AE-6F0AC286CB40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Digirati.IIIF</RootNamespace>
+    <AssemblyName>Digirati.IIIF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AnnotationListReference.cs" />
+    <Compile Include="Model\Extension\AuthAnnotationList.cs" />
+    <Compile Include="Model\Extension\DownloadAsService.cs" />
+    <Compile Include="Model\Extension\SearchResultAnnotation.cs" />
+    <Compile Include="Model\Extension\SearchResultAnnotationList.cs" />
+    <Compile Include="Model\Extension\SearchResultAnnotationResource.cs" />
+    <Compile Include="Model\Extension\SearchResultsLayer.cs" />
+    <Compile Include="Model\Extension\TextLineAnnotationResource.cs" />
+    <Compile Include="Model\IAnnotation.cs" />
+    <Compile Include="Model\IAnnotationListReference.cs" />
+    <Compile Include="Model\IIIFPresentationBase.cs" />
+    <Compile Include="Model\IProfile.cs" />
+    <Compile Include="Model\IService.cs" />
+    <Compile Include="Model\JsonLD\IJSONLDBase.cs" />
+    <Compile Include="Model\JsonLD\JSONLDBase.cs" />
+    <Compile Include="Model\JsonLD\LanguageValue.cs" />
+    <Compile Include="Model\JsonLD\ValueObject.cs" />
+    <Compile Include="Model\Metadata.cs" />
+    <Compile Include="Model\MetaDataValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialisation\DynamicJsonLDSerialiser.cs" />
+    <Compile Include="Serialisation\MetaDataValueSerialiser.cs" />
+    <Compile Include="Serialisation\ProfileSerialiser.cs" />
+    <Compile Include="Serialisation\ResourceSerialiser.cs" />
+    <Compile Include="Serialisation\ServiceSerialiser.cs" />
+    <Compile Include="Serialisation\ToStringJsonConverter.cs" />
+    <Compile Include="Serialisation\WriteOnlyConverter.cs" />
+    <Compile Include="Model\Types\Annotation.cs" />
+    <Compile Include="Model\Types\AnnotationList.cs" />
+    <Compile Include="Model\Types\Canvas.cs" />
+    <Compile Include="Model\Types\Collection.cs" />
+    <Compile Include="Model\Types\ImageApi\IImageService.cs" />
+    <Compile Include="Model\Types\ImageApi\ImageAnnotation.cs" />
+    <Compile Include="Model\Types\ImageApi\ImageService.cs" />
+    <Compile Include="Model\Types\ImageApi\ImageServiceProfile.cs" />
+    <Compile Include="Model\Types\ImageApi\SimpleImageService.cs" />
+    <Compile Include="Model\Types\ImageApi\Size.cs" />
+    <Compile Include="Model\Types\ImageApi\TileSource.cs" />
+    <Compile Include="Model\Types\ImageApi\UriProfile.cs" />
+    <Compile Include="Model\Types\ImageResource.cs" />
+    <Compile Include="Model\Types\Layer.cs" />
+    <Compile Include="Model\Types\Manifest.cs" />
+    <Compile Include="Model\Types\Range.cs" />
+    <Compile Include="Model\Types\Resource.cs" />
+    <Compile Include="Model\Types\Sequence.cs" />
+    <Compile Include="Model\Types\Service.cs" />
+    <Compile Include="Model\UriAnnotationListReference.cs" />
+    <Compile Include="Model\UriPatterns.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Conversion\" />
+    <Folder Include="Model\Examples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
