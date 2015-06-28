@@ -1,10 +1,10 @@
 ﻿namespace Digirati.IIIF.Model
 {
-    public class XAudio : XCanvas
+    public class PhysicalObject : ElementBase
     {
         public override string Type
         {
-            get { return "ixif:Audio"; }
+            get { return "dctypes:PhysicalObject"; }
         }
     }
 }

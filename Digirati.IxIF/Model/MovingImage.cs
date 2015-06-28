@@ -2,7 +2,7 @@
 
 namespace Digirati.IIIF.Model
 {
-    public class XVideo : XCanvas
+    public class MovingImage : ElementBase
     {
         [JsonProperty(Order = 35, PropertyName = "height")]
         public int Height { get; set; }
@@ -12,7 +12,7 @@ namespace Digirati.IIIF.Model
 
         public override string Type
         {
-            get { return "ixif:Video"; }
+            get { return "dctypes:MovingImage"; }
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Digirati.IIIF.Model.Extension
 {
     public class SearchResultAnnotationList : AnnotationList
     {
-        public override string Context
+        public override dynamic Context
         {
             get { return "http://iiif.io/api/presentation/2/context.json"; }
         }

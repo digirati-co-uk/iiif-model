@@ -1,10 +1,10 @@
 ﻿namespace Digirati.IIIF.Model
 {
-    public class XBornDigital : XCanvas
+    public class OtherDocument : ElementBase
     {
         public override string Type
         {
-            get { return "ixif:BornDigital"; }
+            get { return "ixif:OtherDocument"; }
         }
     }
 }

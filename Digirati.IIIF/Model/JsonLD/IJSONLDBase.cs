@@ -5,7 +5,7 @@ namespace Digirati.IIIF.Model.JsonLD
     public interface IJSONLDBase
     {
         [JsonProperty(Order = 1, PropertyName = "@context")]
-        string Context { get; set; }
+        dynamic Context { get; set; } // can have more than one
 
         [JsonProperty(Order = 2, PropertyName = "@id")]
         string Id { get; set; }

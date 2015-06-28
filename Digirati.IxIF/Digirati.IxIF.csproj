@@ -151,14 +151,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\XAnnotation.cs" />
-    <Compile Include="Model\XAudio.cs" />
-    <Compile Include="Model\XBornDigital.cs" />
-    <Compile Include="Model\XCanvas.cs" />
-    <Compile Include="Model\XManifest.cs" />
-    <Compile Include="Model\XResource.cs" />
-    <Compile Include="Model\XSequence.cs" />
-    <Compile Include="Model\XVideo.cs" />
+    <Compile Include="Model\ElementBase.cs" />
+    <Compile Include="Model\ManifestWithMediaSequences.cs" />
+    <Compile Include="Model\MovingImage.cs" />
+    <Compile Include="Model\OtherDocument.cs" />
+    <Compile Include="Model\PdfDocument.cs" />
+    <Compile Include="Model\PhysicalObject.cs" />
+    <Compile Include="Model\SequenceWithCompatibilityHint.cs" />
+    <Compile Include="Model\Sound.cs" />
+    <Compile Include="Model\MediaSequence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
