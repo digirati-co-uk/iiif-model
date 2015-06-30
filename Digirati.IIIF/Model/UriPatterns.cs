@@ -30,7 +30,7 @@ namespace Digirati.IIIF.Model
         public const string XAnnotation = "{scheme}://{host}/{prefix}/{identifier}/xanno/{name}";
         public const string TranscriptAnnotation = "{scheme}://{host}/{prefix}/{identifier}/transcript/{name}";
 
-        public const string IxIFContext = "http://wellcomelibrary.org/iiif/ixif/0/context.json";
+        public const string IxIFContext = "http://wellcomelibrary.org/ixif/0/context.json";
 
         public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
 
