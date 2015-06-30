@@ -154,12 +154,12 @@
     <Compile Include="Model\ElementBase.cs" />
     <Compile Include="Model\ManifestWithMediaSequences.cs" />
     <Compile Include="Model\MovingImage.cs" />
-    <Compile Include="Model\OtherDocument.cs" />
-    <Compile Include="Model\PdfDocument.cs" />
+    <Compile Include="Model\Document.cs" />
     <Compile Include="Model\PhysicalObject.cs" />
     <Compile Include="Model\SequenceWithCompatibilityHint.cs" />
     <Compile Include="Model\Sound.cs" />
     <Compile Include="Model\MediaSequence.cs" />
+    <Compile Include="Model\TranscriptAnnotation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

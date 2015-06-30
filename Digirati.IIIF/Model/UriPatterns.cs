@@ -26,7 +26,9 @@ namespace Digirati.IIIF.Model
         public const string OcrAltoContent = "{scheme}://{host}/{prefix}/{identifier}/contentAsText/{name}";
 
         // X extensions:
+        public const string Element = "{scheme}://{host}/{prefix}/{identifier}/element/{name}";
         public const string XAnnotation = "{scheme}://{host}/{prefix}/{identifier}/xanno/{name}";
+        public const string TranscriptAnnotation = "{scheme}://{host}/{prefix}/{identifier}/transcript/{name}";
 
         public const string IxIFContext = "http://wellcomelibrary.org/iiif/ixif/0/context.json";
 
