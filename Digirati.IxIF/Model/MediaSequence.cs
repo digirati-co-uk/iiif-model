@@ -23,7 +23,7 @@ namespace Digirati.IIIF.Model
 
         public override string Type
         {
-            get { return "ixif:mediaSequence"; }
+            get { return "ixif:MediaSequence"; }
         }
     }
 }
