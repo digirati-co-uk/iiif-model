@@ -27,12 +27,14 @@ namespace Digirati.IIIF.Model
 
         // X extensions:
         public const string Element = "{scheme}://{host}/{prefix}/{identifier}/element/{name}";
-        public const string XAnnotation = "{scheme}://{host}/{prefix}/{identifier}/xanno/{name}";
         public const string TranscriptAnnotation = "{scheme}://{host}/{prefix}/{identifier}/transcript/{name}";
 
         public const string IxIFContext = "http://wellcomelibrary.org/ixif/0/context.json";
 
         public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
+        public const string LoginServiceProfile = "http://iiif.io/api/image/2/auth/login";
+        public const string LogoutServiceProfile = "http://iiif.io/api/image/2/auth/logout";
+        public const string AuthTokenServiceProfile = "http://iiif.io/api/image/2/auth/token";
 
         // Transition
         public const string WellcomeThumbs = "{scheme}://{host}";
