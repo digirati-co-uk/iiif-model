@@ -10,5 +10,8 @@ namespace Digirati.IIIF.Model.Types
 
         [JsonProperty(Order = 11, PropertyName = "label")]
         public MetaDataValue Label { get; set; }
+
+        [JsonProperty(Order = 12, PropertyName = "description")]
+        public MetaDataValue Description { get; set; }
     }
 }
