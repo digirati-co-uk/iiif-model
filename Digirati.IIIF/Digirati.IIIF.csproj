@@ -151,6 +151,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\AcceptTermsService.cs" />
     <Compile Include="Model\AnnotationListReference.cs" />
     <Compile Include="Model\Extension\SearchResultAnnotation.cs" />
     <Compile Include="Model\Extension\SearchResultAnnotationList.cs" />

@@ -29,7 +29,8 @@ namespace Digirati.IIIF.Model
         public const string Element = "{scheme}://{host}/{prefix}/{identifier}/element/{name}";
         public const string TranscriptAnnotation = "{scheme}://{host}/{prefix}/{identifier}/transcript/{name}";
 
-        public const string IxIFContext = "http://wellcomelibrary.org/ixif/0/context.json";
+        public const string IxIFContext = "http://wellcomelibrary.org/ld/ixif/0/context.json";
+        public const string ExtContext = "http://wellcomelibrary.org/ld/iiif-ext/0/context.json";
 
         public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
         public const string LoginServiceProfile = "http://iiif.io/api/image/2/auth/login";

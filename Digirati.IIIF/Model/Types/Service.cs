@@ -6,7 +6,7 @@ namespace Digirati.IIIF.Model.Types
     public class Service : JSONLDBase, IService
     {
         [JsonProperty(Order = 10, PropertyName = "profile")]
-        public dynamic Profile { get; set; }
+        public virtual dynamic Profile { get; set; }
 
         [JsonProperty(Order = 11, PropertyName = "label")]
         public MetaDataValue Label { get; set; }
