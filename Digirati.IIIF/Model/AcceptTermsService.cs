@@ -19,8 +19,8 @@ namespace Digirati.IIIF.Model
         [JsonProperty(Order = 102, PropertyName = "exp:fullTerms")]
         public string ExpFullTerms { get; set; }
 
-        [JsonProperty(Order = 102, PropertyName = "exp:fullTermsHtml")]
-        public string ExpFullTermsHtml { get; set; }
+        [JsonProperty(Order = 102, PropertyName = "exp:fullTermsSimple")]
+        public string ExpFullTermsSimple { get; set; }
 
         [JsonProperty(Order = 103, PropertyName = "exp:actionLabel")]
         public MetaDataValue ExpActionLabel { get; set; }
