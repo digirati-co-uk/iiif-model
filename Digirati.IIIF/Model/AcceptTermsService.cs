@@ -16,14 +16,14 @@ namespace Digirati.IIIF.Model
         }
         
         // do we need an extra setting to tell a viewer whether it can "pull through" (import into interface)?
-        [JsonProperty(Order = 102, PropertyName = "wdl:fullTerms")]
-        public string WdlFullTerms { get; set; }
+        [JsonProperty(Order = 102, PropertyName = "exp:fullTerms")]
+        public string ExpFullTerms { get; set; }
 
-        [JsonProperty(Order = 102, PropertyName = "wdl:fullTermsHtml")]
-        public string WdlFullTermsHtml { get; set; }
+        [JsonProperty(Order = 102, PropertyName = "exp:fullTermsHtml")]
+        public string ExpFullTermsHtml { get; set; }
 
-        [JsonProperty(Order = 103, PropertyName = "wdl:actionLabel")]
-        public MetaDataValue WdlActionLabel { get; set; }
+        [JsonProperty(Order = 103, PropertyName = "exp:actionLabel")]
+        public MetaDataValue ExpActionLabel { get; set; }
 
     }
 }

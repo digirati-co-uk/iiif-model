@@ -7,10 +7,11 @@ namespace Digirati.IIIF.Model.Types.ImageApi
     // Also known as an "info.json"
     public class ImageService : JSONLDBase, IImageService
     {
-        public override dynamic Context
-        {
-            get { return "http://iiif.io/api/image/2/context.json"; }
-        }
+        // Allow additional context
+        //public override dynamic Context
+        //{
+        //    get { return "http://iiif.io/api/image/2/context.json"; }
+        //}
 
         [JsonProperty(Order = 4, PropertyName = "protocol")]
         public string Protocol
