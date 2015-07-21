@@ -160,6 +160,7 @@
     <Compile Include="Model\Extension\TextLineAnnotationResource.cs" />
     <Compile Include="Model\IAnnotation.cs" />
     <Compile Include="Model\IAnnotationListReference.cs" />
+    <Compile Include="Model\IHasService.cs" />
     <Compile Include="Model\IIIFPresentationBase.cs" />
     <Compile Include="Model\IProfile.cs" />
     <Compile Include="Model\IService.cs" />

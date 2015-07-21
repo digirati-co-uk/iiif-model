@@ -4,7 +4,13 @@ namespace Digirati.IIIF.Model
 {
     public static class UriPatterns
     {
-        public const string IIIF2Context = "http://iiif.io/api/presentation/2/context.json";
+        public const string IIIF2PreziContext = "http://iiif.io/api/presentation/2/context.json";
+        public const string IIIF2ImageContext = "http://iiif.io/api/image/2/context.json";
+
+        public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
+        public const string LoginServiceProfile = "http://iiif.io/api/image/2/auth/login";
+        public const string LogoutServiceProfile = "http://iiif.io/api/image/2/auth/logout";
+        public const string AuthTokenServiceProfile = "http://iiif.io/api/image/2/auth/token";
 
         // recommended patterns
         public const string Collection = "{scheme}://{host}/{prefix}/collection/{name}";
@@ -20,6 +26,7 @@ namespace Digirati.IIIF.Model
         // Image service URI
         public const string ImageResource = "{scheme}://{host}/{prefix}/{identifier}-{seqIndex}/res/{name}";
 
+
         // Our extensions ss IIIF:                        {scheme}://{host}{/prefix}/{___________identifier___________}/{region}/{size}/{rotation}/{quality}.{format}
         public const string ImageService = "{scheme}://{host}/{prefix}-img/{identifier}-{seqIndex}/{name}";
         public const string ImageAnnotation = "{scheme}://{host}/{prefix}/{identifier}/imageanno/{name}";
@@ -31,11 +38,8 @@ namespace Digirati.IIIF.Model
 
         public const string IxIFContext = "http://wellcomelibrary.org/ld/ixif/0/context.json";
         public const string ExtContext = "http://wellcomelibrary.org/ld/iiif-ext/0/context.json";
-
-        public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
-        public const string LoginServiceProfile = "http://iiif.io/api/image/2/auth/login";
-        public const string LogoutServiceProfile = "http://iiif.io/api/image/2/auth/logout";
-        public const string AuthTokenServiceProfile = "http://iiif.io/api/image/2/auth/token";
+        public const string MediaElementService = "{scheme}://{host}/iiif-media/{identifier}-{seqIndex}/{name}";
+        public const string MediaElementServiceProfile = "http://wellcomelibrary.org/ld/ixif/0/alpha.json";
 
         // Transition
         public const string WellcomeThumbs = "{scheme}://{host}";

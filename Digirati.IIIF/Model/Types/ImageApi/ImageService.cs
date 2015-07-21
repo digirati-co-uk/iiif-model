@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Digirati.IIIF.Model.Types.ImageApi
 {
     // Also known as an "info.json"
-    public class ImageService : JSONLDBase, IImageService
+    public class ImageService : JSONLDBase, IImageService, IHasService
     {
         // Allow additional context
         //public override dynamic Context
