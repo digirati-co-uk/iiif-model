@@ -41,6 +41,9 @@ namespace Digirati.IIIF.Model
 
         [JsonProperty(Order = 30, PropertyName = "viewingHint")]
         public string ViewingHint { get; set; }
+        
+        [JsonProperty(Order = 32, PropertyName = "navDate")]
+        public string NavDate { get; set; }
 
         [JsonProperty(Order = 60, PropertyName = "otherContent")]
         public IAnnotationListReference[] OtherContent { get; set; }
