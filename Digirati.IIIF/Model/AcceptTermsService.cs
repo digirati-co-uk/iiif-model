@@ -25,5 +25,8 @@ namespace Digirati.IIIF.Model
         [JsonProperty(Order = 103, PropertyName = "exp:actionLabel")]
         public MetaDataValue ExpActionLabel { get; set; }
 
+        [JsonProperty(Order = 103, PropertyName = "exp:autoClosingVersionOfId")]
+        public string AutoClosingVersionOfId { get; set; }
+
     }
 }
