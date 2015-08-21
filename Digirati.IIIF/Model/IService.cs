@@ -1,6 +1,8 @@
-﻿namespace Digirati.IIIF.Model
+﻿using Digirati.IIIF.Model.JsonLD;
+
+namespace Digirati.IIIF.Model
 {
-    public interface IService
+    public interface IService : IJSONLDBase
     {
     }
 }

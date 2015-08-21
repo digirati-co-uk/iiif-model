@@ -16,7 +16,7 @@ namespace Digirati.IIIF.Model
         public MetaDataValue Description { get; set; }
 
         [JsonProperty(Order = 15, PropertyName = "thumbnail")]
-        public string Thumbnail { get; set; }
+        public dynamic Thumbnail { get; set; }
 
         [JsonProperty(Order = 16, PropertyName = "attribution")]
         public MetaDataValue Attribution { get; set; }

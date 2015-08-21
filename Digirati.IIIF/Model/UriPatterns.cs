@@ -8,6 +8,7 @@ namespace Digirati.IIIF.Model
         public const string IIIF2ImageContext = "http://iiif.io/api/image/2/context.json";
 
         public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
+        public const string ImageServiceLevel0Profile = "http://iiif.io/api/image/2/level0.json";
         public const string LoginServiceProfile = "http://iiif.io/api/image/2/auth/login";
         public const string LogoutServiceProfile = "http://iiif.io/api/image/2/auth/logout";
         public const string AuthTokenServiceProfile = "http://iiif.io/api/image/2/auth/token";
