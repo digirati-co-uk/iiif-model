@@ -1,5 +1,6 @@
 ﻿using Digirati.IIIF.Model.JsonLD;
 using Digirati.IIIF.Model.Types;
+using Digirati.IIIF.Serialisation;
 using Newtonsoft.Json;
 
 namespace Digirati.IIIF.Model
@@ -34,6 +35,7 @@ namespace Digirati.IIIF.Model
         public Resource SeeAlso { get; set; }
 
         [JsonProperty(Order = 26, PropertyName = "service")]
+        [JsonConverter(typeof(ServiceSerialiser))]
         public dynamic Service { get; set; } // object or array of objects
 
         [JsonProperty(Order = 27, PropertyName = "related")]
