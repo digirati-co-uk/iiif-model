@@ -15,5 +15,8 @@ namespace Digirati.IIIF.Model.Types.ImageApi
 
         [JsonProperty(Order = 39, PropertyName = "profile")]
         public dynamic Profile { get; set; }
+
+        [JsonProperty(Order = 26, PropertyName = "service")]
+        public dynamic Service { get; set; } // object or array of objects
     }
 }

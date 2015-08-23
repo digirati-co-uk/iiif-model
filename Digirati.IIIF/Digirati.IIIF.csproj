@@ -201,7 +201,7 @@
     <Compile Include="Model\Types\Range.cs" />
     <Compile Include="Model\Types\Resource.cs" />
     <Compile Include="Model\Types\Sequence.cs" />
-    <Compile Include="Model\Types\Service.cs" />
+    <Compile Include="Model\Types\GenericService.cs" />
     <Compile Include="Model\UriAnnotationListReference.cs" />
     <Compile Include="Model\UriPatterns.cs" />
   </ItemGroup>

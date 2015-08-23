@@ -7,7 +7,7 @@ namespace Digirati.IIIF.Serialisation
     {
         public override object ConvertJToken(JToken jToken)
         {
-            return jToken.ToObject<Service>();
+            return jToken.ToObject<GenericService>();
         }
     }
 }

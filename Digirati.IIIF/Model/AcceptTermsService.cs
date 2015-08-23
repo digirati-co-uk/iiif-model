@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace Digirati.IIIF.Model
 {
-    public class AcceptTermsService : Service
+    public class AcceptTermsService : GenericService
     {
         public override dynamic Profile
         {

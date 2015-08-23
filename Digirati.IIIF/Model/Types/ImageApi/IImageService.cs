@@ -2,7 +2,7 @@
 
 namespace Digirati.IIIF.Model.Types.ImageApi
 {
-    public interface IImageService : IJSONLDBase
+    public interface IImageService : IService
     {
         dynamic Profile { get; set; }
     }
