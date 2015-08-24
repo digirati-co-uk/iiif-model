@@ -180,6 +180,7 @@
     <Compile Include="Serialisation\MetaDataValueSerialiser.cs" />
     <Compile Include="Serialisation\ProfileSerialiser.cs" />
     <Compile Include="Serialisation\ResourceSerialiser.cs" />
+    <Compile Include="Serialisation\ServiceEqualityComparer.cs" />
     <Compile Include="Serialisation\ServiceSerialiser.cs" />
     <Compile Include="Serialisation\ToStringJsonConverter.cs" />
     <Compile Include="Serialisation\WriteOnlyConverter.cs" />
