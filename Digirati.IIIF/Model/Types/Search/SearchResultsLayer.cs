@@ -1,4 +1,5 @@
 ﻿using Digirati.IIIF.Model.JsonLD;
+using Digirati.IIIF.Model.Types.Search;
 using Newtonsoft.Json;
 
 namespace Digirati.IIIF.Model.Extension
@@ -6,7 +7,7 @@ namespace Digirati.IIIF.Model.Extension
     /// <summary>
     /// Each AnnotationList references a Layer.  The Layer can be a blank node, and must be included in every annotation list. 
     /// </summary>
-    public class SearchResultsLayer : JSONLDBase
+    public class SearchResultsLayer : JSONLDBase, IHasIgnorableParameters
     {
         public override string Type
         {
@@ -17,7 +18,7 @@ namespace Digirati.IIIF.Model.Extension
         public int Total { get; set; }
 
 
-        [JsonProperty(Order = 20, PropertyName = "pageSize")]
-        public int PageSize { get; set; }
+        [JsonProperty(Order = 20, PropertyName = "ignored")]
+        public string[] Ignored { get; set; }
     }
 }

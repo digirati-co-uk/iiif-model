@@ -153,11 +153,14 @@
   <ItemGroup>
     <Compile Include="Model\AcceptTermsService.cs" />
     <Compile Include="Model\AnnotationListReference.cs" />
-    <Compile Include="Model\Extension\SearchResultAnnotation.cs" />
-    <Compile Include="Model\Extension\SearchResultAnnotationList.cs" />
-    <Compile Include="Model\Extension\SearchResultAnnotationResource.cs" />
-    <Compile Include="Model\Extension\SearchResultsLayer.cs" />
-    <Compile Include="Model\Extension\TextLineAnnotationResource.cs" />
+    <Compile Include="Model\Extension\PresentationAnnotationList.cs" />
+    <Compile Include="Model\Types\Search\Hit.cs" />
+    <Compile Include="Model\Types\Search\IHasIgnorableParameters.cs" />
+    <Compile Include="Model\Types\Search\SearchResultAnnotation.cs" />
+    <Compile Include="Model\Types\Search\SearchResultAnnotationList.cs" />
+    <Compile Include="Model\Types\Search\SearchResultAnnotationResource.cs" />
+    <Compile Include="Model\Types\Search\SearchResultsLayer.cs" />
+    <Compile Include="Model\Extension\ContentAsTextAnnotationResource.cs" />
     <Compile Include="Model\IAnnotation.cs" />
     <Compile Include="Model\IAnnotationListReference.cs" />
     <Compile Include="Model\IHasService.cs" />
@@ -174,6 +177,9 @@
     <Compile Include="Model\Types\Auth\ClientCredentials.cs" />
     <Compile Include="Model\Types\Auth\Token.cs" />
     <Compile Include="Model\Types\Auth\AuthServiceError.cs" />
+    <Compile Include="Model\Types\Search\Term.cs" />
+    <Compile Include="Model\Types\Search\TermList.cs" />
+    <Compile Include="Model\Types\Search\TextQuoteSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Serialisation\DynamicJsonLDSerialiser.cs" />
     <Compile Include="Serialisation\ExtensionMethods.cs" />

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Digirati.IIIF.Model.Extension
 {
-    public class TextLineAnnotationResource : JSONLDBase
+    public class ContentAsTextAnnotationResource : JSONLDBase
     {
         public override string Type
         {

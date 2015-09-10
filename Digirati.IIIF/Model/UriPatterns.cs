@@ -32,6 +32,8 @@ namespace Digirati.IIIF.Model
         public const string ImageService = "{scheme}://{host}/{prefix}-img/{identifier}-{seqIndex}/{name}";
         public const string ImageAnnotation = "{scheme}://{host}/{prefix}/{identifier}/imageanno/{name}";
         public const string OcrAltoContent = "{scheme}://{host}/{prefix}/{identifier}/contentAsText/{name}";
+        public const string TextLineAnnotation = "{scheme}://{host}/{prefix}/{identifier}/annos/contentAsText/{name}";
+        public const string SearchResultAnnotation = "{scheme}://{host}/{prefix}/{identifier}/annos/searchResults/{name}";
 
         // X extensions:
         public const string Element = "{scheme}://{host}/{prefix}/{identifier}/element/{name}";
