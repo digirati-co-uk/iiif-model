@@ -31,7 +31,7 @@ namespace Digirati.IIIF.Fluent
             else
             {
                 var currentType = current.GetType();
-                if(currentType.IsArray())
+                if(currentType.IsArray)
                 {
                     var currentArray = (TValue[])current;
                     TValue[] newArray = new TValue[currentArray.Length + 1];
@@ -41,7 +41,7 @@ namespace Digirati.IIIF.Fluent
                 }
                 else
                 {
-                    newValue = new TValue[] { value };
+                    newValue = new TValue[] { current, value };
                 }
             }
             property.SetValue(subject, newValue);
