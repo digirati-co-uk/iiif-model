@@ -1,11 +1,6 @@
-﻿using Digirati.IIIF.Model.JsonLD;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Digirati.IIIF.Fluent
 {
@@ -19,7 +14,10 @@ namespace Digirati.IIIF.Fluent
         /// <param name="subject"></param>
         /// <param name="predicateAsLambda"></param>
         /// <param name="value"></param>
-        public static void Assert<TSubject, TValue>(this TSubject subject, Expression<Func<TSubject, dynamic>> predicateAsLambda, TValue value)
+        public static void Assert<TSubject, TValue>(
+            this TSubject subject, 
+            Expression<Func<TSubject, dynamic>> predicateAsLambda, 
+            TValue value)
         {
             var property = GetPropertyFromExpression(predicateAsLambda);
             dynamic current = property.GetValue(subject);
@@ -47,7 +45,8 @@ namespace Digirati.IIIF.Fluent
             property.SetValue(subject, newValue);
         }
 
-        private static PropertyInfo GetPropertyFromExpression<T>(Expression<Func<T, object>> GetPropertyLambda)
+        private static PropertyInfo GetPropertyFromExpression<T>(
+            Expression<Func<T, object>> GetPropertyLambda)
         {
             // thanks: http://stackoverflow.com/questions/17115634/get-propertyinfo-of-a-parameter-passed-as-lambda-expression
 
