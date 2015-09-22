@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
 
@@ -6,6 +7,7 @@ namespace Digirati.IIIF.Fluent
 {
     public static class ExtensionMethods
     {
+
         /// <summary>
         /// This does not test to see if a resource with the same @id has already been asserted.
         /// </summary>
@@ -43,6 +45,28 @@ namespace Digirati.IIIF.Fluent
                 }
             }
             property.SetValue(subject, newValue);
+        }
+
+        /// <summary>
+        /// Multi value version
+        /// </summary>
+        /// <typeparam name="TSubject"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="subject"></param>
+        /// <param name="predicateAsLambda"></param>
+        /// <param name="values"></param>
+        public static void AssertMany<TSubject, TValue>(
+            this TSubject subject,
+            Expression<Func<TSubject, dynamic>> predicateAsLambda,
+            IEnumerable<TValue> values)
+        {
+            if (values != null)
+            {
+                foreach (TValue value in values)
+                {
+                    subject.Assert(predicateAsLambda, value);
+                }
+            }
         }
 
         private static PropertyInfo GetPropertyFromExpression<T>(
