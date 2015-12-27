@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Digirati.IIIF.Model;
 using Digirati.IIIF.Model.Types;
-using Newtonsoft.Json;
 using Digirati.IxIF;
+using Newtonsoft.Json;
 
-namespace Digirati.IIIF.Model
+namespace Digirati.IIIF.UVExtensions
 {
     public class AcceptTermsService : GenericService
     {
         public override dynamic Context
         {
-            get { return ExtensionUriPatterns.UVContext; }
+            get { return ExtensionUriPatterns.WdlExtensionsContext; }
         }
         public override dynamic Profile
         {

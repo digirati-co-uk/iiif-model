@@ -34,6 +34,8 @@ namespace Digirati.IIIF.Model
         public const string OcrAltoContent = "{scheme}://{host}/{prefix}/{identifier}/contentAsText/{name}";
         public const string TextLineAnnotation = "{scheme}://{host}/{prefix}/{identifier}/annos/contentAsText/{name}";
         public const string SearchResultAnnotation = "{scheme}://{host}/{prefix}/{identifier}/annos/searchResults/{name}";
+        public const string ManifestLevelService = "{scheme}://{host}/{prefix}/{identifier}-{seqIndex}/{name}-service";
+
 
         // X extensions:
         public const string Element = "{scheme}://{host}/{prefix}/{identifier}/element/{name}";
