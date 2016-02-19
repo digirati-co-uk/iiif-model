@@ -6,7 +6,7 @@ namespace Digirati.IIIF.Model.Types
     {
         public override string Type
         {
-            get { return "dcTypes:Image"; }
+            get { return "dctypes:Image"; }
         }
 
         [JsonProperty(Order = 35, PropertyName = "height")]
