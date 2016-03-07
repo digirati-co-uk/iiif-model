@@ -50,6 +50,7 @@ namespace Digirati.IIIF.Model
 
         // Transition
         public const string WellcomeThumbs = "{scheme}://{host}";
+        public const string WellcomeThumbsTemplate = "{scheme}://{host}/thumbs/{identifier}/{seqIndex}/{name}.jpg";
 
 
         public static string WithIdentifier(this string s, string identifier)
