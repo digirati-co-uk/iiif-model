@@ -20,7 +20,9 @@ namespace Digirati.IIIF.UVExtensions
         [JsonProperty(Order = 102, PropertyName = "manifestType")]
         public string ManifestType { get; set; }
 
-        [JsonProperty(Order = 102, PropertyName = "suppressMetadata")]
+        [JsonProperty(Order = 104, PropertyName = "suppressMetadata")]
         public string[] SuppressMetadata { get; set; }
+
+        
     }
 }
