@@ -12,7 +12,7 @@ namespace Digirati.IIIF.UVExtensions
         }
         public override dynamic Profile
         {
-            get { return "http://universalviewer.azurewebsites.net/ui-extensions-profile"; }
+            get { return "http://universalviewer.io/ui-extensions-profile"; }
         }
 
 
