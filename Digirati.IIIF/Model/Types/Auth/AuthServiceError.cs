@@ -2,7 +2,7 @@
 {
     public class AuthServiceError : ITokenResponse
     {
-        public string Id { get; set; }
+        public string MessageId { get; set; }
 
         public string Error { get; set; }
 

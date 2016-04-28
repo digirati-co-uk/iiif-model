@@ -8,6 +8,6 @@ namespace Digirati.IIIF.Model.Types.Auth
 {
     public interface ITokenResponse
     {
-        string Id { get; set; }
+        string MessageId { get; set; }
     }
 }

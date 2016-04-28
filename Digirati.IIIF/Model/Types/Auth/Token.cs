@@ -4,7 +4,7 @@ namespace Digirati.IIIF.Model.Types.Auth
 {
     public class Token : ITokenResponse
     {
-        public string Id { get; set; }
+        public string MessageId { get; set; }
 
         [JsonProperty(Order = 1, PropertyName = "accessToken")]
         public string AccessToken { get; set;}
