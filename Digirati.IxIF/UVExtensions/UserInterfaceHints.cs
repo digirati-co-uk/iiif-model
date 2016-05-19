@@ -19,10 +19,16 @@ namespace Digirati.IIIF.UVExtensions
         // do we need an extra setting to tell a viewer whether it can "pull through" (import into interface)?
         [JsonProperty(Order = 102, PropertyName = "manifestType")]
         public string ManifestType { get; set; }
-
+        
         [JsonProperty(Order = 104, PropertyName = "suppressMetadata")]
         public string[] SuppressMetadata { get; set; }
 
-        
+        [JsonProperty(Order = 110, PropertyName = "allowEmbed")]
+        public bool AllowEmbed { get; set; }
+
+        [JsonProperty(Order = 111, PropertyName = "allowMediaDownload")]
+        public bool AllowMediaDownload { get; set; }
+
+
     }
 }
