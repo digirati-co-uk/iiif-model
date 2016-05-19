@@ -8,7 +8,7 @@ namespace Digirati.IIIF.UVExtensions
     {
         public override dynamic Context
         {
-            get { return ExtensionUriPatterns.WdlExtensionsContext; }
+            get { return ExtensionUriPatterns.UVContext; }
         }
         public override dynamic Profile
         {
@@ -23,12 +23,7 @@ namespace Digirati.IIIF.UVExtensions
         [JsonProperty(Order = 104, PropertyName = "suppressMetadata")]
         public string[] SuppressMetadata { get; set; }
 
-        [JsonProperty(Order = 110, PropertyName = "allowEmbed")]
-        public bool AllowEmbed { get; set; }
-
-        [JsonProperty(Order = 111, PropertyName = "allowMediaDownload")]
-        public bool AllowMediaDownload { get; set; }
-
-
+        [JsonProperty(Order = 110, PropertyName = "disableUI")]
+        public string[] DisableUI { get; set; }
     }
 }

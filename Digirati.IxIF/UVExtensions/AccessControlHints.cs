@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Digirati.IIIF.Model.Types;
+﻿using Digirati.IIIF.Model.Types;
 using Digirati.IIIF.Serialisation;
 using Digirati.IxIF;
 using Newtonsoft.Json;

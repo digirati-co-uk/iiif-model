@@ -13,7 +13,7 @@ namespace Digirati.IIIF.UVExtensions
     {
         public override dynamic Context
         {
-            get { return ExtensionUriPatterns.WdlExtensionsContext; }
+            get { return ExtensionUriPatterns.UVContext; }
         }
         public override dynamic Profile
         {
