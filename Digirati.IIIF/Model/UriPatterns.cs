@@ -12,8 +12,10 @@ namespace Digirati.IIIF.Model
         public const string ImageServiceProfile = "http://iiif.io/api/image/2/level1.json";
         public const string ImageServiceLevel0Profile = "http://iiif.io/api/image/2/level0.json";
         public const string LoginServiceProfile = "http://iiif.io/api/auth/0/login";
-        public const string LoginClickthroughServiceProfile = "http://iiif.io/api/auth/0/login/clickthrough";
-        public const string LoginRestrictedServiceProfile = "http://iiif.io/api/auth/0/login/restricted";
+        public const string LoginClickthroughServiceProfile090 = "http://iiif.io/api/auth/0/login/clickthrough";
+        public const string LoginClickthroughServiceProfile093 = "http://iiif.io/api/auth/0/clickthrough";
+        public const string LoginExternalServiceProfile090 = "http://iiif.io/api/auth/0/login/restricted";
+        public const string LoginExternalServiceProfile093 = "http://iiif.io/api/auth/0/external";
         public const string LogoutServiceProfile = "http://iiif.io/api/auth/0/logout";
         public const string AuthTokenServiceProfile = "http://iiif.io/api/auth/0/token";
 
