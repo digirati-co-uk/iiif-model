@@ -35,7 +35,7 @@ namespace Digirati.IIIF.Model
         public Resource Related { get; set; }
 
         [JsonProperty(Order = 26, PropertyName = "seeAlso")]
-        public Resource SeeAlso { get; set; }
+        public dynamic SeeAlso { get; set; }
 
         [JsonProperty(Order = 27, PropertyName = "service")]
         [JsonConverter(typeof(ServiceSerialiser))]
