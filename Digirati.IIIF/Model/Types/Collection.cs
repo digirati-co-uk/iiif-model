@@ -10,6 +10,9 @@ namespace Digirati.IIIF.Model.Types
         [JsonProperty(Order = 101, PropertyName = "manifests")]
         public Manifest[] Manifests { get; set; }
 
+        [JsonProperty(Order = 111, PropertyName = "members")]
+        public IIIFPresentationBase[] Members { get; set; }
+
         public override string Type
         {
             get { return "sc:Collection"; }
