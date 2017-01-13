@@ -64,6 +64,11 @@ namespace Digirati.IIIF.Model
         {
             return s.Replace("{name}", name);
         }
+        
+        public static string WithFormat(this string s, string format)
+        {
+            return s.Replace("{format}", format);
+        }
 
         public static string WithNumericalName(this string s, string prefix, int index)
         {
