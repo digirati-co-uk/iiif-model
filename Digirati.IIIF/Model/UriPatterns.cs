@@ -37,6 +37,7 @@ namespace Digirati.IIIF.Model
         // Our extensions ss IIIF:                        {scheme}://{host}{/prefix}/{___________identifier___________}/{region}/{size}/{rotation}/{quality}.{format}
         public const string ImageService = "{scheme}://{host}/{prefix}-img/{identifier}-{seqIndex}/{name}";
         public const string ImageAnnotation = "{scheme}://{host}/{prefix}/{identifier}/imageanno/{name}";
+        public const string OcrAltoAllAnnos = "{scheme}://{host}/{prefix}/{identifier}/{name}";
         public const string OcrAltoContent = "{scheme}://{host}/{prefix}/{identifier}/contentAsText/{name}";
         public const string TextLineAnnotation = "{scheme}://{host}/{prefix}/{identifier}/annos/contentAsText/{name}";
         public const string SearchResultAnnotation = "{scheme}://{host}/{prefix}/{identifier}/annos/searchResults/{name}";
