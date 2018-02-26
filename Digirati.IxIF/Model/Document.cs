@@ -10,6 +10,6 @@ namespace Digirati.IIIF.Model
         }
 
         [JsonProperty(Order = 5, PropertyName = "format")]
-        public string Format { get; set; }
+        public new string Format { get; set; }
     }
 }
